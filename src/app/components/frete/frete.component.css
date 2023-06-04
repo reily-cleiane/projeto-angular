@@ -1,0 +1,23 @@
+
+.cepFrete{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+
+}
+#cidadeFrete, #msgCep{
+    margin-top: 0.2rem;
+}
+
+#msgCep{
+    color: rgb(199, 50, 50);
+}
+
+.cepFrete p, .cepFrete input, .cepFrete button {
+    margin-right: 1rem;
+}
+
+.cepFrete button{
+    height: auto;
+    width: auto;
+}

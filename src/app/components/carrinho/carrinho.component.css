@@ -1,0 +1,15 @@
+.pedidoResumo{
+    display: flex;
+    justify-content:space-between;
+    align-items: top;
+    min-width: 80%;
+}
+
+.pedidoResumo > *{
+    flex-grow: 1;
+}
+
+.carrinho{
+    width: 98%;
+    margin: auto;
+}

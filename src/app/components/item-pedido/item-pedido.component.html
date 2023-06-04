@@ -1,0 +1,9 @@
+<div class="itemPedido">
+    <div class="produto">
+        <app-produto [produtoProps]="itemPedidoProps.produto"></app-produto>
+    </div>
+    <!-- o ngModel é uma forma de bind duplo, para usá-lo precisa importar FormsModule no app.module.ts -->
+    <input [(ngModel)]="itemPedidoProps.quantidade" class="quantidade" type="number" min="1" (change)="validarQuantidade($event)" />
+    <p class="totalItemPedido">R$ {{ totalItem.toFixed(2) }}</p>
+    <img class="lixeira" src="./assets/imagens/design/lixeira.png" (click)="clickLixiera(itemPedidoProps.produto.id)" />
+</div>

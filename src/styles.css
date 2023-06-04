@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    box-sizing:border-box
+}
+
+ul, li{
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+h1, h2{
+    text-align: left;
+}
+
+h2{
+    margin-bottom: 60px;
+}
+
+h6{
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.pedido:first-child > li:first-child .itemPedido{
+    border-top: 0.1rem solid slategray;
+}
+
+html{
+    font-size: 18px;
+}

@@ -1,0 +1,10 @@
+<div class="produto">
+  <!-- daria para usar <img src={{caminho}} /> -->
+    <img [src]="produtoProps.imagem" />
+    <div class="informacaoProduto">
+      <p class="nomeProduto">{{ produtoProps.nome }}</p>
+      <p class="descricaoProduto">{{ produtoProps.descricao }}</p>
+      <p class="precoProduto">R$ {{ produtoProps.preco }}</p>
+    </div>
+</div>
+  

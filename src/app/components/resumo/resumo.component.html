@@ -1,0 +1,17 @@
+<div class="resumo">
+    <h2>Resumo</h2>
+    <app-frete (cepUpdateEvento)="handleCepUpdate($event.valor,$event.validado, $event.cepEnvio )"></app-frete>
+    <div class='resumoItens'>
+        <h6>Itens ({{ qtdItens }})</h6>
+        <p>R$ {{ valorItens.toFixed(2) }}</p>
+    </div>
+    <div class='resumoFrete'>
+        <h6>Frete</h6>
+        <p>R$ {{ freteInvalido? "-":valorFrete }}</p>
+    </div>
+    <div class='resumoTotal'>
+        <h6>Total</h6>
+        <p>R$ {{ valorTotal.toFixed(2) }}</p>
+    </div>
+    <button [disabled]="freteInvalido" id="fecharPedido" type="submit" (click)="fecharPedidoEvento.emit({valorTotal:valorTotal, valorItens:valorItens, valorFrete:valorFrete, cep:cep})">Fechar Pedido</button>
+</div>

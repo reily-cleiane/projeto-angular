@@ -1,0 +1,17 @@
+
+
+<div class="carrinho">
+    <h1>Carrinho de compras</h1>
+
+    <ng-container *ngIf="qtdItens === 0; else elseBlock">
+      <h2>O carrinho de compras está vazio!</h2>
+    </ng-container>
+    <ng-template #elseBlock>
+      <h2>Você tem {{ qtdItens === 1 ? '1 item' : qtdItens + ' itens' }}</h2>
+      <div class="pedidoResumo">
+        <app-pedido></app-pedido>
+        <app-resumo (fecharPedidoEvento)="handleFecharPedido($event.valorTotal, $event.valorItens,$event.valorFrete, $event.cep)"></app-resumo>
+      </div>
+    </ng-template>
+</div>
+

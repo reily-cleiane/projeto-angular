@@ -1,0 +1,5 @@
+<ul class="pedido">
+    <li *ngFor="let item of pedidoShared.lista">
+      <app-item-pedido [itemPedidoProps]="item" (qtdUpdateEvento)="handleQtdUpdate($event.id, $event.valor)" (clickLixieraEvento)="handleClickLixeira($event)"></app-item-pedido>
+    </li>
+</ul>

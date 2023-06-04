@@ -1,0 +1,21 @@
+<div class="frete">
+    <h6>Frete</h6>
+    <div class="cepFrete">
+        <p>CEP</p>
+        <form>
+            <!-- Obrigatório colocar name-->
+            <input type="text" [(ngModel)]="cep" name="cep" (keyup)="validarCEP($event)" maxLength="9" placeholder="59000-180" required pattern="\d{5}-?\d{3}"/>
+            <button type="button" (click)="consultarCEP()">Calcular</button>
+        </form>
+        <p id="freteCalculado">R$ {{ cepValidado? freteCalculado: "-" }}</p>
+    </div>
+
+    <ng-container *ngIf="msgErro != ''">
+        <p id="msgCep">{{ msgErro }}</p>
+    </ng-container>
+
+    <ng-container *ngIf="cidade != ''">
+        <p id='cidadeFrete'> {{ cidade }}</p>
+    </ng-container>
+    
+</div>

@@ -1,0 +1,39 @@
+.produto{
+    display: flex;
+    justify-content: flex-start;
+    width:100%;
+    box-sizing:border-box;
+    align-items: center;
+}
+
+.produto img{
+    width: 100px;
+    height: 50px;
+    flex-basis: 1; 
+    margin-right: 1rem;
+    border-radius: 10px;
+}
+
+.informacaoProduto{
+    text-align: left;
+    flex-basis: 2;
+    font-size: 1rem;
+}
+
+.informacaoProduto p{
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.nomeProduto{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.descricaoProduto{
+    font-size: 0.8rem;
+}
+
+.precoProduto{
+    font-size: 0.8rem;
+}

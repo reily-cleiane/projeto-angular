@@ -1,0 +1,64 @@
+.resumo{
+    background-color: rgb(77, 84, 177);
+    color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    flex: 1 1 auto;
+}
+.resumo h2{
+    padding-bottom: 0.6rem;
+    border-bottom: 0.1rem solid rgb(211, 196, 219);
+}
+
+.resumoItens{
+    border-top: 0.1rem solid rgb(211, 196, 219);
+}
+
+.resumoFrete{
+    border-bottom: 0.1rem solid rgb(211, 196, 219);
+}
+
+.resumoItens, .resumoFrete, .resumoTotal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0.6rem 0 0.6rem 0;
+    
+}
+.resumo h6{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 1rem;
+}
+.resumoItens p{
+    margin: 0;
+    padding: 0;
+}
+.resumoFrete p{
+    margin: 0;
+    padding: 0;
+}
+
+#fecharPedido{
+    width: 100%;
+    background-color: rgb(76, 222, 188);
+    padding: 1rem;
+    border-style: none;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    color:white;
+    font-weight: bolder;
+}
+
+#fecharPedido:disabled{
+    background-color: rgb(199, 203, 211);
+
+}
+
+h2{
+    text-align: left;
+}
